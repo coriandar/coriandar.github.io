@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            mellow: "#fbf8f2",
+                            red: "#ef4444",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body style="background: #fbf8f2">
+        <main
+            class="flex h-screen w-screen flex-col items-center justify-center"
+        >
+            <div
+                id="card"
+                class="border-red min-h-fit min-w-fit rounded-xl border p-8"
+            >
+                <h1 class="text-3xl font-bold underline">Tony Yee</h1>
+                <ul class="flex gap-2">
+                    <li>
+                        <a href="https://www.linkedin.com/in/yeetony/">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/coriandar/"> Github </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
