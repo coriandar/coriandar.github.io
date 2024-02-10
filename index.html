@@ -3,7 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Tony Yee</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <script
+            src="https://kit.fontawesome.com/3068c1668c.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                font-family: "Roboto Mono", monospace;
+            }
+        </style>
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -12,31 +30,61 @@
                         colors: {
                             mellow: "#fbf8f2",
                             red: "#ef4444",
+                            darkCyan2: "#134f5c",
                         },
                     },
                 },
             };
         </script>
     </head>
-    <body style="background: #fbf8f2">
-        <main
-            class="flex h-screen w-screen flex-col items-center justify-center"
-        >
-            <div
-                id="card"
-                class="border-red min-h-fit min-w-fit rounded-xl border p-8"
-            >
-                <h1 class="text-3xl font-bold underline">Tony Yee</h1>
-                <ul class="flex gap-2">
-                    <li>
-                        <a href="https://www.linkedin.com/in/yeetony/">
-                            Linkedin
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/coriandar/"> Github </a>
-                    </li>
-                </ul>
+    <body style="background-color: #fbf8f2">
+        <main class="flex justify-center">
+            <div class="m-4 flex flex-col items-center gap-8 p-8">
+                <span
+                    id="profile"
+                    class="bg-darkCyan2 m-4 rounded-full p-16 opacity-90"
+                ></span>
+                <div id="about" class="flex min-h-fit min-w-fit flex-col">
+                    <h1 class="text-center text-3xl font-bold">TONY YEE</h1>
+                    <p class="font-bold">Graduate Software Developer</p>
+                    <p class="text-darkCyan2 text-xs font-normal">
+                        (...almost, Nov 2024)
+                    </p>
+                </div>
+                <section id="contacts" class="w-96">
+                    <ul class="flex w-full flex-col items-center gap-4">
+                        <li class="w-full">
+                            <a
+                                href="https://www.linkedin.com/in/yeetony/"
+                                target="_blank"
+                            >
+                                <button
+                                    class="text-darkCyan2 hover:border-darkCyan2/30 mr-2 h-10 w-10 w-full items-center justify-center rounded-lg border shadow-lg hover:text-[#000000]"
+                                    type="button"
+                                    aria-label="LinkedIn Profile"
+                                    title="LinkedIn Profile"
+                                >
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <a
+                                href="https://github.com/coriandar/"
+                                target="_blank"
+                            >
+                                <button
+                                    class="text-darkCyan2 hover:border-darkCyan2/30 mr-2 h-10 w-10 w-full items-center justify-center rounded-lg border shadow-lg hover:text-[#000000]"
+                                    type="button"
+                                    aria-label="GitHub Profile"
+                                    title="GitHub Profile"
+                                >
+                                    <i class="fa-brands fa-github"></i>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </main>
     </body>
